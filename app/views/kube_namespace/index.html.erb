@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Namespaces</h1>
+
+<table>
+  <tbody>
+    <% @namespaces.each do |ns| %>
+      <tr>
+        <td><%= ns.metadata.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

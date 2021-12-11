@@ -1,0 +1,2 @@
+module KubeNamespaceHelper
+end

@@ -1,0 +1,2 @@
+class KubernetesController < ApplicationController
+end
