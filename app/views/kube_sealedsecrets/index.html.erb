@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sealed Secrets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Namespace</th>
+      <th>Name</th>
+      <th>Encrypted Secrets</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @secrets.each do |secret| %>
+      <tr>
+        <td><%= secret['metadata']['namespace'] %></td>
+        <td><%= secret['metadata']['name'] %></td>
+        <td><%= secret['spec']['encryptedData'].keys %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,6 +1,6 @@
 require "test_helper"
 
-class CarTest < ActiveSupport::TestCase
+class KubeSealedsecretsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
